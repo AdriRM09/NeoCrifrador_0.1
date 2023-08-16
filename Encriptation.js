@@ -4,7 +4,7 @@ function encriptar(){
    const alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z']
    var inputOriginal=document.getElementById('text1')
    var result=document.getElementById('cifrado')
-   let originalMessage=inputOriginal.value
+   let originalMessage=inputOriginal.value.toLowerCase()
    for (let i = 0; i < originalMessage.length; i++) {
        let letra=originalMessage[i]
        let index=alphabet.indexOf(letra)
